@@ -87,7 +87,7 @@ if __name__ == '__main__':
     optimizer_d = optim.Adam(discriminator.parameters(), lr=0.0002)
 
     # 训练GAN
-    num_epochs = 20
+    num_epochs = 200
     for epoch in range(num_epochs):
         for batch_idx, (real_images, _) in enumerate(dataloader):
             batch_size = real_images.size(0)
